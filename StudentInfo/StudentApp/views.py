@@ -7,5 +7,7 @@ def student(request):
     return render(request, 'student.html')
 def landing(request):
     return render(request, 'landing.html')
+def contact(request):
+    return render(request, 'contact.html')
 
 # Create your views here.
