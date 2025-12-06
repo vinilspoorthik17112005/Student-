@@ -5,5 +5,7 @@ def index(request):
 def student(request):
     # Logic to fetch and display student details
     return render(request, 'student.html')
+def landing(request):
+    return render(request, 'landing.html')
 
 # Create your views here.
