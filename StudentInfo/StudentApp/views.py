@@ -6,6 +6,9 @@ def student(request):
     # Logic to fetch and display student details
     return render(request,'student.html')
 def landing(request):
+    return render(request, 'landing.html')
+def contact(request):
+    return render(request, 'contact.html')
     return render(request,'landing.html')
 def courses(request):
     return render(request,'courses.html')

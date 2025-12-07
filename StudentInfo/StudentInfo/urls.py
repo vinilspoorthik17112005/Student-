@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from StudentApp.views import index,student,landing,contact
 from StudentApp.views import index,student,landing,courses
 
 urlpatterns = [
@@ -23,5 +24,6 @@ urlpatterns = [
     path('index/', index, name='index'),
     path('student/', student, name='student'),
     path('landing/', landing, name='landing'),
+    path('contact/', contact, name='contact'),
     path('courses/',courses,name='courses')
 ]
