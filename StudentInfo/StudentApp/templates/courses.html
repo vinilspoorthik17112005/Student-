@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0f0f0f, #1b1b1b, #111);
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .courses-title {
+      text-align: center;
+      font-size: 2.8em;
+      margin-bottom: 50px;
+      background: linear-gradient(45deg, #42a5f5, #7e57c2, #ab47bc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    .courses-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .course-card {
+      background: rgba(255,255,255,0.1);
+      width: 280px;
+      padding: 20px;
+      border-radius: 18px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .course-card:hover {
+      transform: scale(1.07) rotate3d(1, 1, 0, 7deg);
+      box-shadow: 0 15px 60px rgba(0,0,0,0.8);
+    }
+
+    .course-card h3 {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      color: #4cafef;
+    }
+
+    .course-card p {
+      font-size: 0.95em;
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
+    .price {
+      display: block;
+      font-size: 1.3em;
+      color: #00ffb0;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .enroll-btn {
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    .enroll-btn:hover {
+      background: linear-gradient(45deg, #ff9800, #ff5722);
+      transform: translateY(-4px);
+    }
+  </style>
+
+</head>
+<body>
+
+  <h2 class="courses-title">Our Premium Courses</h2>
+
+  <div class="courses-container">
+
+    <div class="course-card">
+      <h3>AI & Machine Learning Engineering</h3>
+      <p>Deep learning, neural networks, generative AI & ML deployment.</p>
+      <span class="price">₹3,00,000</span>
+      <button class="enroll-btn">Enroll Now</button>
+    </div>
+
+    <div class="course-card">
+      <h3>Cybersecurity & Ethical Hacking</h3>
+      <p>Pen-testing, malware analysis, red teaming, OSINT, defense.</p>
+      <span class="price">₹2,80,000</span>
+      <button class="enroll-btn">Enroll Now</button>
+    </div>
+
+    <div class="course-card">
+      <h3>Full Stack Development</h3>
+      <p>MERN + Django, API design, cloud deployment, DevOps.</p>
+      <span class="price">₹2,50,000</span>
+      <button class="enroll-btn">Enroll Now</button>
+    </div>
+
+    <div class="course-card">
+      <h3>Data Science & Business Analytics</h3>
+      <p>Power BI, SQL, Data Models, Big Data, enterprise analytics.</p>
+      <span class="price">₹3,20,000</span>
+      <button class="enroll-btn">Enroll Now</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
